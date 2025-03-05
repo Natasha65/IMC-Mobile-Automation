@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="IMC Android Automation">
+	<listeners>
+		<listener class-name="com.imc.listeners.ExtentListeners" />
+		<listener class-name="com.imc.errorCollectors.TestListenerAdapter" />
+		<listener class-name="com.imc.listeners.TestFilterListener" />
+		<listener class-name="com.imc.listeners.AnnotationTransformer" />
+		<listener class-name="com.imc.listeners.MyTestListenerAdapter" />
+	</listeners>
+	<test name="IMC Android Automation - Tests">
+		<groups></groups>
+		<classes>
+		
+		<!--
+		<class name="com.imc.test.AppointmentsTest" />
+		<class name="com.imc.test.DashboardTest" />-->
+		
+		
+		
+		<class name="com.imc.test.Test_Login" /> 
+				
+		</classes>
+	</test>
+</suite>
